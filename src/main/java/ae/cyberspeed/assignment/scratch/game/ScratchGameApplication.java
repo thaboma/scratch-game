@@ -24,7 +24,7 @@ public class ScratchGameApplication {
         }
 
         try {
-            String file = args[1]="../config.json";
+            String file = args[1];
             File f = new File(file);
             System.out.printf("File exists %s does it exits ? %s%n", f.getAbsolutePath(), f.exists());
             scratchGameClient = new ScratchGameClient(file);
